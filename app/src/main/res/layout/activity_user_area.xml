@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context="com.comlu.foodnepal.easyreadmvp.UserAreaActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvWelcomeMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Welcome Message"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/exploreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutTop"
+            android:padding="10dp"
+            android:text="Find books here..."
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <SearchView
+            android:id="@+id/search_bar_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exploreText"
+            android:iconifiedByDefault="false"
+            android:background="#f5f5f5"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp">
+
+        </SearchView>
+
+        <ExpandableListView
+            android:id="@+id/expandableListView_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/search_bar_mine"
+            android:background="#f5f5f5"
+            android:layout_margin="5dp"
+            android:padding="2dp">
+
+        </ExpandableListView>
+
+    </RelativeLayout>
+
+    <!-- make a separate drawer layout file and add it here in the main layout-->
+    <!-- we already have a part of the drawer layout that is the relative which is going to be seen always-->
+    <!--make a different layout for the nav drawer and reference it-->
+    <!-- First create a blank fragment-->
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.comlu.foodnepal.easyreadmvp.NavigationDrawerFragment"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer">
+
+        <!--if rendering problems in design view...choose fragment class as NavigationDrawerFragment -->
+
+    </fragment>
+</android.support.v4.widget.DrawerLayout>

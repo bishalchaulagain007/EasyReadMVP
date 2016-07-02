@@ -1,0 +1,57 @@
+<!--Rendering problems is due to the grade build tool version mismatch--><!--Don't worry about that-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.comlu.foodnepal.easyreadmvp.NavigationDrawerFragment">
+
+    <LinearLayout
+        android:id="@+id/containerDrawerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/bRegister"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/aboutus"
+            app:civ_border_color="#006699"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tvNavUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:paddingLeft="20sp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvNavEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Email"
+            android:paddingLeft="20sp"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerDrawerImage"
+        android:background="#ffffff"
+        android:padding="3dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

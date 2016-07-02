@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.comlu.foodnepal.easyreadmvp.UserAreaActivity">
+
+
+    <item android:id="@+id/navigate"
+        android:title="Item"
+        android:orderInCategory="200"
+        app:showAsAction = "never"/>
+
+</menu>

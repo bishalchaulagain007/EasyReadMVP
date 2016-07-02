@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EasyReadMVP</string>
+    <string name="main_title">Category List</string>
+    <string name="title_activity_pre_user_area">PreUserArea</string>
+    <string name="app_label">Search Here!</string>
+    <string name="hint">Would you please...</string>
+    <string name="search">Search me ...</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="text_dismiss">DISMISS</string>
+</resources>

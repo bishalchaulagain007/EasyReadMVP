@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="CustomActionBarTheme" parent="CustomActionBarTheme.Base">
+
+        <!-- LOOK HERE-->
+        <!-- MIGHT CAUSE SOME PROBLEMS-->
+        <!-- Some Changes here-->
+        <!-- use min sdk 21 to remove this warning message-->
+
+        <!--<item name="colorPrimary">#990000</item>-->
+        <!--<item name="android:colorPrimaryDark">#7f1b13</item>-->
+
+    </style>
+
+    <!-- Seperate theme so that app runs material design-->
+    <!-- Base theme-->
+
+    <!-- To change the whole theme of the app..change the parent theme below-->
+    <!-- Choose NoActionBar so as to use ToolBar of AppBar-->
+
+    <style name="CustomActionBarTheme.Base" parent="Theme.AppCompat.NoActionBar">
+
+        <!-- Reference to the colors.xml-->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+
+    <style name="CustomToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
+
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+
+    </style>
+
+    <style name="CustomActionBarTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CustomActionBarTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+    </style>
+
+
+
+
+</resources>
